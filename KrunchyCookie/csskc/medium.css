@@ -5,8 +5,9 @@
 
     main figure {
         float: right;
-        width: 48%;
+        width: 50%;
         margin-left: 2%;
+        margin-bottom: 1%;
     }
 
     div.recipes {
