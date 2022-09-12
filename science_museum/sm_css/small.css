@@ -13,17 +13,26 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*header rules here*/
 header {
-    background-color: #4F3A81;
+    background-color: lightblue;
     padding: 1rem 2%;
     color: white;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
 }
 header h1 {
+    font-weight: 600;
+    font-size: 3rem;
     margin: 0;
-    letter-spacing: .5px;
+    letter-spacing: .7px;
 }
 header h2 {
     margin: 0;
     font-weight: 300;
+    font-size: x-large;
+    letter-spacing: -1px;
 }
 
 /*navigation rules here*/
@@ -43,6 +52,8 @@ nav a {
 nav a:hover {background-color: #494C8C; color: white;}
 
 /*main rules here*/
+
+
 main { 
     padding: 1rem 2%;
     display: block;
@@ -50,6 +61,7 @@ main {
 main h1 {color: #4F3A81;}
 
 main figure img {width: 100%;}
+
 main figure {
     width: 100%;
     margin: 0;
@@ -59,6 +71,18 @@ main figcaption {
     text-align: center;
     font-size: .8rem;
 }
+
+.heroimage {
+    width: 100%;
+    margin: 0;
+
+}
+
+.heroimage img {
+    width: 100%;
+    height: auto;
+}
+
 
 /*footer rules here*/
 footer {
