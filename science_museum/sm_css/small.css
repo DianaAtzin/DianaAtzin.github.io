@@ -60,6 +60,17 @@ main {
 }
 main h1 {color: #4F3A81;}
 
+main figure.starsHero {
+    width: 100%;
+    margin: 0;
+
+}
+
+main figure.starsHero img {
+    width: 100%;
+    height: auto;
+}
+
 main figure img {width: 100%;}
 
 main figure {
@@ -71,18 +82,6 @@ main figcaption {
     text-align: center;
     font-size: .8rem;
 }
-
-.heroimage {
-    width: 100%;
-    margin: 0;
-
-}
-
-.heroimage img {
-    width: 100%;
-    height: auto;
-}
-
 
 /*footer rules here*/
 footer {
