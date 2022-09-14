@@ -12,8 +12,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 }
 
 /*header rules here*/
+
+div#headerWrapper{
+    background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
+}
 header {
-    background-color: lightblue;
+   
+    background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.%, rgb(23, 25, 95) 71.5%);
     padding: 1rem 2%;
     color: white;
     display: flex;
@@ -36,17 +41,21 @@ header h2 {
 }
 
 /*navigation rules here*/
+div#navWrapper {
+    background-color: lightgray;
+}
 
 nav { background-color: lightgray;}
 nav ul {margin:0; padding: 0}
 nav li {list-style-type: none;}
-nav li.active {background-color: #8A038C;}
+nav li.active {background-color: rgb(14, 192, 192);}
 
 nav a {
     display: block;
     padding: .8rem 0; /*44min height*/
+    padding-left: .8rem;
     color: black;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
 }
 nav a:hover {background-color: #494C8C; color: white;}
@@ -58,17 +67,22 @@ main {
     padding: 1rem 2%;
     display: block;
 }
-main h1 {color: #4F3A81;}
+main h1 {
+    color: #4F3A81;
+}
 
 main figure.starsHero {
     width: 100%;
     margin: 0;
+    
 
 }
 
 main figure.starsHero img {
     width: 100%;
     height: auto;
+    margin: 0;
+   
 }
 
 main figure img {width: 100%;}
@@ -83,10 +97,13 @@ main figcaption {
     font-size: .8rem;
 }
 
+
 /*footer rules here*/
+div#footerWrapper {
+    background-color: lightgray;
+}
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #4F3A81;
-    color: white;
+    background-color: lightgray;
 }

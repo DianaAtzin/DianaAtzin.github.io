@@ -5,12 +5,16 @@
   header, footer, nav, main {max-width: 75rem; margin: auto;}
 
   
-  nav ul {padding-left: 2%;}
+  nav ul {
+    padding-left: 2%;
+    display: flex;
+    justify-content: center;
+  }
   nav ul li {flex-basis: auto;}
   nav a {padding: .5rem 1rem;}
   
   main figure {width: 25%;}
   
-  div.recipes {column-count: 3;}
+  
   
   }  /* end of media query*/ 
