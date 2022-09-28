@@ -18,7 +18,7 @@ div#headerWrapper{
 }
 header {
    
-    background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.%, rgb(23, 25, 95) 71.5%);
+    background: linear-gradient(65.5deg, rgb(23, 205, 205) -26%, rgb(23, 25, 95) 71.5%);
     padding: 1rem 2%;
     color: white;
     display: flex;
@@ -27,6 +27,8 @@ header {
 header div {
     padding-left: 2vw;
 }
+
+
 header h1 {
     font-weight: 600;
     font-size: 3rem;
@@ -38,7 +40,16 @@ header h2 {
     font-weight: 300;
     font-size: x-large;
     letter-spacing: -1px;
+  
 }
+@media only screen and (max-width: 300px) {
+
+    header h2{
+        display: none;
+    }
+
+
+}  /* end of media query*/ 
 
 /*navigation rules here*/
 div#navWrapper {
@@ -74,15 +85,12 @@ main h1 {
 main figure.starsHero {
     width: 100%;
     margin: 0;
-    
-
 }
 
 main figure.starsHero img {
     width: 100%;
     height: auto;
     margin: 0;
-   
 }
 
 main figure img {width: 100%;}
