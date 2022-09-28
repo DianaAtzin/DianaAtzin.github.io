@@ -6,7 +6,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
  /*body rules here*/
  body {
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
     font-size: 16px;
     
 }
@@ -19,7 +20,7 @@ div#headerWrapper{
 header {
    
     background: linear-gradient(65.5deg, rgb(23, 205, 205) -26%, rgb(23, 25, 95) 71.5%);
-    padding: 1rem 2%;
+    padding: 1rem $gutter;
     color: white;
     display: flex;
     align-items: flex-end;
@@ -30,14 +31,14 @@ header div {
 
 
 header h1 {
-    font-weight: 600;
+    font-weight: $heavyWeight;
     font-size: 3rem;
     margin: 0;
     letter-spacing: .7px;
 }
 header h2 {
     margin: 0;
-    font-weight: 300;
+    font-weight: $regularWeight;
     font-size: x-large;
     letter-spacing: -1px;
   
@@ -53,10 +54,10 @@ header h2 {
 
 /*navigation rules here*/
 div#navWrapper {
-    background-color: lightgray;
+    background-color: $primaryColor;
 }
 
-nav { background-color: lightgray;}
+nav { background-color: $primaryColor;}
 nav ul {margin:0; padding: 0}
 nav li {list-style-type: none;}
 nav li.active {background-color: rgb(14, 192, 192);}
@@ -75,11 +76,12 @@ nav a:hover {background-color: #494C8C; color: white;}
 
 
 main { 
-    padding: 1rem 2%;
+    padding: 1rem $gutter;
     display: block;
 }
 main h1 {
     color: #4F3A81;
+    font-weight: $heavyWeight;
 }
 
 main figure.starsHero {
@@ -108,10 +110,10 @@ main figcaption {
 
 /*footer rules here*/
 div#footerWrapper {
-    background-color: lightgray;
+    background-color: $primaryColor;
 }
 footer {
     text-align: center;
-    padding: 1rem 2%;
-    background-color: lightgray;
+    padding: 1rem $gutter;
+    background-color:$primaryColor;
 }
