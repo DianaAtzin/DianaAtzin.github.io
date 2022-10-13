@@ -1,0 +1,28 @@
+
+
+    /* main {max-width: 75rem; margin: auto;}  */ 
+  
+  header, footer, nav, main {max-width: 72rem; margin: auto;}
+
+  header{ padding: .5rem 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: right;
+  }
+  nav ul li {flex-basis: auto;}
+  nav a {padding: .5rem 1rem;
+         text-align: right;
+  }
+ main h1{
+  margin:0;
+  padding: .5rem;
+ }
+  
+  div.fruitGallery figure{
+    flex-basis: 23%;
+    padding: 0;
+    margin: .6rem;
+}
+  
