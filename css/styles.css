@@ -416,39 +416,47 @@ body {
 
 /*header rules here*/
 div#headerWrapper {
-  background: white;
+  background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
 }
 
 header {
-  background: white;
-  padding: 0.5rem 1rem;
-  color: #e78a1a;
-  display: grid;
-  grid-template-columns: 110px auto;
+  background: linear-gradient(65.5deg, rgb(23, 205, 205) -26%, rgb(23, 25, 95) 71.5%);
+  padding: 1rem 2%;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+
+header div {
+  padding-left: 2vw;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 3rem;
   margin: 0;
-  margin-top: 1.5rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
 }
 
 header h2 {
   margin: 0;
   font-weight: 300;
-  font-size: large;
+  font-size: x-large;
   letter-spacing: -1px;
 }
 
-/* end of media query*/
+@media only screen and (max-width: 560px) {
+  header h2 {
+    display: none;
+  }
+} /* end of media query*/
 /*navigation rules here*/
 div#navWrapper {
-  background-color: white;
+  background-color: lightgray;
 }
 
 nav {
-  background-color: #ed871a;
+  background-color: lightgray;
 }
 
 nav ul {
@@ -460,43 +468,48 @@ nav li {
   list-style-type: none;
 }
 
-nav ul li a {
+nav li.active {
+  background-color: rgb(14, 192, 192);
+}
+
+nav a {
   display: block;
   padding: 0.8rem 0; /*44min height*/
   padding-left: 0.8rem;
-  padding-right: 0.5rem;
-  text-align: right;
+  color: black;
+  text-align: left;
   text-decoration: none;
-  background-color: #c56d0f;
-  color: white;
 }
 
 nav a:hover {
-  background-color: #f09b40;
-  color: #3B8C84;
-  text-decoration: underline;
-}
-
-nav ul li.active a {
-  background-color: #8c4e0b;
+  background-color: #494C8C;
+  color: white;
 }
 
 /*main rules here*/
 main {
-  padding: 0;
-  margin: 0;
+  padding: 1rem 2%;
   display: block;
 }
 
 main h1 {
-  color: #3f978e;
-  padding: 0.5rem;
+  color: #4F3A81;
+  font-weight: 600;
+}
+
+main figure.starsHero {
+  width: 100%;
+  margin: 0;
+}
+
+main figure.starsHero img {
+  width: 100%;
+  height: auto;
   margin: 0;
 }
 
 main figure img {
   width: 100%;
-  padding: 0;
 }
 
 main figure {
@@ -507,73 +520,54 @@ main figure {
 main figcaption {
   text-align: center;
   font-size: 0.8rem;
-  margin-bottom: 1rem;
-}
-
-div.fruitGallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-div.fruitGallery figure {
-  flex-basis: 45%;
-  margin: 0.5rem;
-}
-
-div.fruitGallery figure img {
-  width: 100%;
 }
 
 /*footer rules here*/
 div#footerWrapper {
-  background-color: white;
+  background-color: lightgray;
 }
 
 footer {
   text-align: center;
   padding: 1rem 2%;
-  background-color: #ed871a;
-  color: white;
+  background-color: lightgray;
 }
 
 @media only screen and (min-width: 560px) {
-  header {
-    padding: 1rem 0.5rem;
-  }
   nav ul {
     display: flex;
-    justify-content: right;
   }
-  main h1 {
-    padding: 0.5rem;
+  nav ul li {
+    flex-basis: 25%;
   }
-  main {
-    padding: 0;
-    margin: 0;
-  }
-  div.fruitGallery figure {
-    flex-basis: 29%;
-    padding: 0;
-    margin: 1rem;
-  }
-  div.fruitGallery figure img {
-    width: 100%;
+  main figure {
+    float: right;
+    width: 50%;
+    margin-left: 2%;
+    margin-bottom: 1%;
   }
 } /* end of media query*/
 @media only screen and (min-width: 1028px) {
   /* main {max-width: 75rem; margin: auto;}  */
   header, footer, nav, main {
-    max-width: 72rem;
+    max-width: 75rem;
     margin: auto;
   }
-  header {
-    padding: 0.5rem 0;
-  }
   nav ul {
+    padding-left: 2%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+  }
+  nav ul li {
+    flex-basis: auto;
+  }
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+  main figure {
+    width: 25%;
+  }
+} /* end of media query*/ht;
   }
   nav ul li {
     flex-basis: auto;
