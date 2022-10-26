@@ -328,18 +328,21 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: 0.5rem 2%;
-  background-color: lavender;
+  background-color: #4E4242;
 }
 
 header h1 {
   margin: 0;
   font-weight: 700;
   letter-spacing: 2px;
+  color: white;
+  padding-top: 2%;
 }
 
 header h2 {
   margin: 0;
   font-weight: normal;
+  color: white;
 }
 
 header figure.logo {
@@ -349,56 +352,115 @@ header figure.logo {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
+  background-color: #8C745E;
+}
+nav button {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #302525;
+  display: flex;
+}
+nav button span:nth-child(1) {
+  display: block;
+}
+nav button span:nth-child(2) {
+  display: none;
+}
+nav button.open span:nth-child(1) {
+  display: none;
+}
+nav button.open span:nth-child(2) {
+  display: block;
 }
 
 nav ul {
+  border-top: solid 1px #302525;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: none;
+}
+
+nav ul.open {
+  display: block;
 }
 
 nav ul li {
-  float: left;
-  width: 25%;
+  border-bottom: solid 1px #302525;
 }
 
 nav ul li a {
   display: block;
-  background-color: #444;
-  color: #eee;
-  border-left: 1px solid #777;
-  padding: 0.5rem 0;
+  color: #302525;
+  padding: 0.5rem 2vw;
   text-decoration: none;
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-nav ul li:first-child a {
-  border-left: none;
+  text-align: left;
 }
 
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333;
+  background-color: #5e4e3f;
+  color: wheat;
 }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #6d5b4a;
   color: #fff;
 }
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
+  padding: 0;
   min-height: 10rem;
+}
+
+p {
+  line-height: 2rem;
+  margin-left: 2%;
+}
+
+h1 {
+  margin-left: 2%;
+}
+
+main figure {
+  width: 100%;
+  margin: 0;
+}
+
+picture.photoA {
+  display: block;
+  float: right;
+  width: 46%;
+  margin: 0;
+  margin-left: 2%;
+}
+
+main picture.photoA img, main picture.tacoHero img {
+  width: 100%;
+}
+
+main picture.photoA div {
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 10%;
+}
+
+picture.tacosHero img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: lavender;
+  background-color: #4E4242;
   padding: 0.5rem 2%;
+  margin-top: 2%;
   text-align: center;
+  color: white;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -412,22 +474,24 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%;
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    display: flex;
+    justify-content: left;
+    border: none;
   }
   nav ul li {
-    width: auto;
-  }
-  nav ul li:first-child a {
-    border-left: 1px solid #777;
-  }
-  nav ul li:last-child a {
-    border-right: 1px solid #777;
-  }
-  nav ul li a {
-    padding: 0.5rem 1rem;
+    border: none;
   }
   /*----------- MAIN --------------*/
+  main p {
+    margin-left: 2%;
+  }
+  main H1 {
+    margin-left: 2%;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 64rem) {
@@ -438,6 +502,23 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    display: flex;
+    justify-content: left;
+    border: none;
+  }
+  nav ul li {
+    border: none;
+  }
   /*----------- MAIN --------------*/
+  main p {
+    margin-left: 0;
+  }
+  main H1 {
+    margin-left: 0;
+  }
   /*----------- FOOTER --------------*/
 } /* end of media query */

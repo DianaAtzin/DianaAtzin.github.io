@@ -41,7 +41,8 @@
     
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
+        <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+        <ul id="primaryNav">
             <li><a href="#">Menu</a></li>
             <li><a href="#">Locations</a></li>
             <li class="active"><a href="#">Our Founder</a></li>
@@ -51,10 +52,43 @@
     
     
 <!-- CONTENT HERE -->
-    <main>
+    <main class="clearfix">
+      <!-- Hero image HERE -->
+      <picture class="tacosHero">
+        <source media="(max-width: 450px)" srcset="images/Mexican_Food-200x450.jpg">
+        <source media="(max-width: 600px)" srcset="images/Mexican_Food-211x600.jpg">
+        <source media="(max-width: 750px)" srcset="images/Mexican_Food-255x750.jpg">
+        <source media="(max-width: 900px)" srcset="images/Mexican_Food-329x900.jpg">
+        <source media="(max-width: 1050px)" srcset="images/Mexican_Food-390x1050.jpg">
+        <img src="images/Mexican_Food-Hero.jpg" alt="tacos">
+    </picture>
+
         <h1>Our Founder</h1>
+
+    <!--    <figure class="myphoto">
+            <img src="images/Gabriela-Camara-Original.jpg" alt="Gabriela Camara" sizes="50vw"
+                 srcset="images/Gabriela-Camara-200x200.jpg 200w,
+                         images/Gabriela-Camara-400x500.jpg 500w,
+                         images/Gabriela-Camara-500x700.jpg 700w,
+                         images/Gabriela-Camara-600x900.jpg 900w,">
+
+            <figcaption> Gabriela Camara </figcaption>
+
+        </figure>  -->
+
+        <picture class="photoA">
+            <source media="(max-width: 200px)" srcset="images/Gabriela-Camara-200x200.jpg">
+            <source media="(max-width: 500px)" srcset="images/Gabriela-Camara-500x500.jpg">
+            <source media="(max-width: 700px)" srcset="images/Gabriela-Camara-500x700.jpg">
+            <source media="(max-width: 900px)" srcset="images/Gabriela-Camara-600x900.jpg">
+            <img src="images/Gabriela-Camara-Original.jpg" alt="Gabriela Camara">
+            <div> Gabriela Camara </div>
+        </picture>
+
+
+
         <p>
-            Gabriela Camara is one of Mexico’s leading culinary diplomats who runs two iconic restaurants - Contramar in Mexico City and Cala in San Francisco. In 2019, she was appointed to the Mexican government's Council of Cultural Diplomacy and as an advisor to President Andrés Manuel López Obrador.
+            Gabriela Camara is one of Mexico’s leading culinary diplomats who runs two iconic restaurants - Contramar in Mexico City and Cala in San Francisco. In 2019, she was appointed to the Mexican government's Council of Cultural Diplomacy and as an advisor to President Andrés Manuel López Obrador.<br>
             
             The restaurateur and author, Camara was born in Chihuahua City and grew up in Tepoztlán with her brother. Her father is a former Jesuit priest who moved to Chihuahua City to build a school and a health center. Her mother, who completed a doctoral dissertation on mosaics in southern Italy, also joined the cause. Her mother grew up in Philadelphia. Cámara speaks English and Spanish fluently. <br>
             
@@ -70,6 +104,6 @@
     <footer>
         &copy; 2022 &bull; Diana Putnam &bull; Login 
     </footer>
-
+<script src="js/scripts.js"></script>
 </body>
 </html>
