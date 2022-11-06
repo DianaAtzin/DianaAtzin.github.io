@@ -578,4 +578,30 @@ footer {
     flex-basis: 31.3%;
   }
   /*----------- FOOTER --------------*/
+} /* end of media query */v ul li a {
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin-left: 0.2rem;
+  }
+  nav ul li a:hover {
+    background-color: #F2E4E8;
+    color: black;
+  }
+  nav ul li.active a {
+    color: #9197A7;
+  }
+  /*----------- MAIN --------------*/
+  main p {
+    margin-left: 0;
+  }
+  div.member {
+    flex-basis: 22%;
+    margin: 0.5rem;
+    text-align: left;
+  }
+  div.member figure img {
+    width: 100%;
+  }
+  /*----------- FOOTER --------------*/
 } /* end of media query */
