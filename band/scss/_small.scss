@@ -1,0 +1,208 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $primaryFont;
+
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: 51px auto;
+    align-items:center;
+    padding: .5rem 2%;
+    background-color: $primaryColor;
+
+
+    h1{
+        font-size: 1.6rem;
+        padding-left: 2rem;
+        color: white;
+    }
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+
+    background-color: $menuColor;
+
+    button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .5rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        padding: .5rem 2vw .5rem 1rem;
+        display: flex;
+    }
+
+    button span:nth-child(1){display: block;}
+    button span:nth-child(2){display: none;}
+    button.open span:nth-child(1) {display: none;}
+    button.open span:nth-child(2) {display: block;}
+    
+
+}
+
+nav ul {
+    background-color: $menuColor;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    border-top: solid 1px #302525;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    border-bottom: solid 1px #302525;
+   
+}
+nav ul li a {
+    display: block;
+    color: #302525;
+    padding: .9rem 2vw;
+    text-decoration: none;
+    text-align: right;
+
+}
+
+nav ul li a:hover {
+    background-color: darken($menuColor, $amount: 15%);
+    color: #F2E4E8;
+}
+nav ul li.active a {
+    background-color: darken($menuColor, $amount: 10%);
+    color: #fff;
+}
+
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0;
+    min-height: 10rem;
+}
+
+p{
+    line-height: 1.2rem;
+    margin-left: 0;
+}
+
+h1{ 
+    margin-left: 2.5%;
+    font-size: x-large;
+    color: $primaryColor;
+}
+
+h2{
+    font-size: larger;
+    color: $primaryColor;
+}
+
+
+  main figure {
+    width: 50%;
+    margin: 0;
+  }
+
+ div.articles{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-left: 2%;
+   }
+
+ div.member  {
+    flex-basis: 100%;
+    margin: .5rem ;
+    text-align: left;
+
+
+    figure img{
+        width: 100%;
+    }
+    }
+
+figure.myheptagon img {
+    float: left;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    margin: .5rem;
+}
+
+figure.mybevel img {
+    float: left;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: .5rem;
+}
+
+figure.myparalelogram img {
+    float: left;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    margin: .5rem;
+}
+
+figure.myrhombus img {
+    float: left;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    margin: .5rem;
+}
+
+
+section.thegallery figure{
+    width: 100%;
+    height: 0;
+    padding-bottom: 52%; /* you define this doing image height / widht * 100% */
+    position: relative;
+    margin: 0;
+}
+
+section.thegallery figure img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $primaryColor;
+    padding: .5rem 2%;
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

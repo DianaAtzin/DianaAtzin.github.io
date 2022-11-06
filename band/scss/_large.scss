@@ -1,0 +1,72 @@
+header, main, footer {
+        max-width: 75rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    grid-template-columns: 51px auto auto;
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    justify-self: end;
+    background-color: transparent;
+
+    button {
+        display: none;
+    }
+    ul, ul.open { 
+        position: relative;
+        display: flex;
+        border: none;
+        background-color: transparent;
+        width: auto;
+    }
+
+    ul li {
+        border: none;
+    }
+
+    ul li a{
+        color:white;
+        border-radius: 20px;
+        padding: .5rem 1rem;
+        margin-left: .2rem;
+    }
+
+    ul li a:hover{
+        background-color: #F2E4E8;
+        color: black;
+    }
+
+    ul li.active a{
+        color: #9197A7;
+    }
+} // end nav
+
+/*----------- MAIN --------------*/
+main{
+    p{margin-left: 0;}
+    
+}
+
+div.member  {
+    flex-basis: 22%;
+    margin: .5rem ;
+    text-align: left;
+
+
+    figure img{
+        width: 100%;
+    }
+    }
+
+
+/*----------- FOOTER --------------*/
+    
