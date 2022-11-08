@@ -1,0 +1,67 @@
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+#headerWrapper {
+    border-bottom: 1px solid #eee;
+    background-color: $primaryColor;
+}
+
+header{
+
+    grid-template-columns: 51px auto auto;
+
+    div#phone {
+        display: block;
+        justify-self: end;
+        a{
+            color: $menuColor;
+            text-decoration: none;
+            font-weight: $normalWeight;
+            font-size: 1.5rem;
+        }// end anchor 
+
+        a:hover {color:$accentColor}
+
+
+    } // end phone 
+
+
+} //end header 
+
+
+/*----------- NAVIGATION --------------*/
+div#hamburger, div#closex {display: none;}
+nav{
+    height: auto;
+
+    ul {
+        display: flex;
+        justify-content: end;
+        border: none;
+        background-color: $menuColor;
+        color: antiquewhite;
+        li {border: none;}
+    }
+}
+
+div#headerWrapper {grid-row-start: 1;}
+div#navWrapper {grid-row-start: 2;}
+div#mainWrapper {grid-row-start: 3;}
+div#footerWrapper {grid-row-start: 4;}
+
+
+/*----------- MAIN --------------*/
+
+
+/*---- COLUMNS ----*/
+
+@for $i from 0 through 12{
+$w:($i/12)*100%;
+.medium-#{$i} {flex-basis: $w;}
+} //end of loop
+
+
+/*----------- FOOTER --------------*/
+    

@@ -1,0 +1,38 @@
+header,  main{
+    max-width: 75rem;
+    margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul{
+    display: flex;
+    justify-content: right;
+    padding-right: 8vw;
+}
+
+
+div#headerWrapper {grid-row-start: 1;}
+div#navWrapper {grid-row-start: 2;}
+div#mainWrapper {grid-row-start: 3;}
+div#footerWrapper {grid-row-start: 4;}
+
+
+/*----------- MAIN --------------*/
+
+/*---- COLUMNS ----*/
+
+@for $i from 0 through 12{
+    $w:($i/12)*100%;
+    .large-#{$i} {flex-basis: $w;}
+} //end of loop
+
+/*----------- FOOTER --------------*/
+    
