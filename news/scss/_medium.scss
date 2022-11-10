@@ -1,0 +1,60 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+    button {
+        display: none;
+    }
+    ul, ul.open { 
+        display: flex;
+        justify-content: left;
+        border: none;
+    }
+
+    ul li {
+        border: none;
+    }
+} // end nav
+    
+/*----------- MAIN --------------*/
+
+h1{ margin-left: 2%;}
+
+
+
+div.parent{
+    grid-template-columns: 1f 1fr 1fr;
+    grid-template-rows: auto;
+
+    span{
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+     }
+     .teaser, .lead {
+        padding: .5rem 2vw;
+     }
+     .teaser img, .lead img{
+        width: 100%;
+     }
+    
+    .lead {
+        grid-column: 1 / span 3;
+    }
+ 
+
+
+}// end grid
+
+/*----------- FOOTER --------------*/
+    

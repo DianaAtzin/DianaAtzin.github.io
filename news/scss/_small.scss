@@ -1,0 +1,166 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $primaryFont;
+
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: $primaryColor;
+}
+
+
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+
+    background-color: $menuColor;
+
+    button{
+        position: relative;
+        height: 44px;
+        width: 44px;
+        background: transparent;
+        border: none;
+        .line {
+            position: absolute;
+            height: 2px;
+            width: 60%;
+            left: 20%;
+            background-color: white;
+            transition: all .3s ease;
+        }
+        .top {top: 29%;}
+        .middle {top: 48%;}
+        .bottom {top: 67%}
+       
+    }
+    
+
+}
+
+#hamburgerBtn.open {
+    .top{
+        transform: rotate(45deg);
+        top: 48%
+    }
+    .middle, .bottom {
+        transform: rotate(-45deg);
+        top: 48%
+    }
+}
+
+nav ul {
+    
+    border-top: solid 1px #302525;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    border-bottom: solid 1px #302525;
+   
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 2vw;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+nav ul li a:hover {
+    background-color: darken($menuColor, $amount: 15%);
+    color: #F23545;
+}
+nav ul li.active a {
+    background-color: darken($menuColor, $amount: 10%);
+    color: #c4c4c4;
+}
+
+div#navWrapper {
+    background-color: $menuColor;
+  }
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0;
+   
+}
+
+
+h1{ margin-left: 2%;}
+
+
+ div.parent {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+
+    span{
+        display: block;
+        text-align: center;
+        font-size: .75rem;
+     }
+
+     .teaser, .lead {
+        padding: .5rem 2vw;
+     }
+
+     .teaser img, .lead img{
+        width: 100%;
+     }
+
+     .lead {
+        grid-column: 1 / span 2;
+        
+    }
+
+
+ } // end parent of the news
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $menuColor;
+    padding: .5rem 2%;
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+}
+div#footerWrapper {
+    background-color: $menuColor;
+  }
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
