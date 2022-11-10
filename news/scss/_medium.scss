@@ -33,8 +33,10 @@ h1{ margin-left: 2%;}
 
 
 div.parent{
-    grid-template-columns: 1f 1fr 1fr;
-    grid-template-rows: auto;
+    
+    display: grid; 
+    grid-template-columns:none;
+    grid-template-rows: none;
 
     span{
         display: block;
@@ -52,7 +54,6 @@ div.parent{
         grid-column: 1 / span 3;
     }
  
-
 
 }// end grid
 
