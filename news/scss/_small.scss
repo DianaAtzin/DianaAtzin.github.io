@@ -157,6 +157,31 @@ div#footerWrapper {
     background-color: $menuColor;
   }
 
+div.parentfooter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: left;
+    margin-left: 2%;
+
+    h3{
+        margin-bottom: 0;
+    }
+}
+
+.footer-links {
+    margin-top: .3rem; 
+
+}
+
+span.footer-link {
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

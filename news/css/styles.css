@@ -454,6 +454,30 @@ div#footerWrapper {
   background-color: #1B65A6;
 }
 
+div.parentfooter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  text-align: left;
+  margin-left: 2%;
+}
+div.parentfooter h3 {
+  margin-bottom: 0;
+}
+
+.footer-links {
+  margin-top: 0.3rem;
+}
+
+span.footer-link {
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
@@ -481,24 +505,20 @@ div#footerWrapper {
     margin-left: 2%;
   }
   div.parent {
-    grid-template-columns: 1f 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
   }
   div.parent span {
-    display: block;
-    text-align: center;
     font-size: 1rem;
-  }
-  div.parent .teaser, div.parent .lead {
-    padding: 0.5rem 2vw;
-  }
-  div.parent .teaser img, div.parent .lead img {
-    width: 100%;
   }
   div.parent .lead {
     grid-column: 1/span 3;
   }
   /*----------- FOOTER --------------*/
+  div.parentfooter {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 } /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
