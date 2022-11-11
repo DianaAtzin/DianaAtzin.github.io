@@ -517,7 +517,7 @@ a {
   }
   /*----------- FOOTER --------------*/
   div.parentfooter {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 } /* end of media query */
 @media only screen and (min-width: 64rem) {
@@ -567,4 +567,7 @@ a {
     grid-row: 1/span 2;
   }
   /*----------- FOOTER --------------*/
+  div.parentfooter {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 } /* end of media query */

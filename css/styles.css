@@ -591,26 +591,22 @@ footer {
     padding: 0;
     margin: 0.6rem;
   }
-} /* end of media query*/r: none;
-    background-color: #151536;
-    color: antiquewhite;
+} /* end of media query*/* end of media query */play: flex;
+    justify-content: right;
+    border: none;
   }
   nav ul li {
     border: none;
   }
-  div#headerWrapper {
-    grid-row-start: 1;
-  }
-  div#navWrapper {
-    grid-row-start: 2;
-  }
-  div#mainWrapper {
-    grid-row-start: 3;
-  }
-  div#footerWrapper {
-    grid-row-start: 4;
-  }
   /*----------- MAIN --------------*/
+  main {
+    padding: 0;
+  }
+  main .card {
+    flex-basis: 31.3%;
+  }
+  /*----------- FOOTER --------------*/
+} /* end of media query */  /*----------- MAIN --------------*/
   /*---- COLUMNS ----*/
   .medium-0 {
     flex-basis: 0%;
