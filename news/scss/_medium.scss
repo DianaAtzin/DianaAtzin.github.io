@@ -28,32 +28,16 @@ nav {
     
 /*----------- MAIN --------------*/
 
-h1{ margin-left: 2%;}
 
 
 
-div.parent{
+
+div.parent {
+
+    span { font-size: 1rem;}
     
-    display: grid; 
-    grid-template-columns:none;
-    grid-template-rows: none;
+    .lead {grid-column: 1 / span 3;}
 
-    span{
-        display: block;
-        text-align: center;
-        font-size: 1rem;
-     }
-     .teaser, .lead {
-        padding: .5rem 2vw;
-     }
-     .teaser img, .lead img{
-        width: 100%;
-     }
-    
-    .lead {
-        grid-column: 1 / span 3;
-    }
- 
 
 }// end grid
 
