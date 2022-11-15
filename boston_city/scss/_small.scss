@@ -1,0 +1,218 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $defaultFont;
+}
+
+
+/*----------- HEADER --------------*/
+
+div#headerWrapper{
+    background-image: url(../images/header-small.jpg);
+    height: 140px;
+    background-position:center;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    
+}
+header {
+    color: white;
+    
+}
+
+ div#titleWrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.4rem 2vw;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.subtitle {
+    font-size: medium;
+}
+
+/*----------- NAVIGATION --------------*/
+
+div#navWrapper{
+    background-color: $menuColor;
+}
+
+nav {
+    button{
+        padding: .8rem;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: rgba(255,255,255, 0.9);
+        display: flex;
+    
+    }
+
+}
+
+
+nav ul {
+    display: none;
+    border-top: solid 1px rgba(255,255,255, 0.1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    border-bottom: solid 1px rgba(255,255,255, 0.1);
+   
+}
+nav ul li a {
+    display: block;
+    font-weight: $lightWeight;
+    color: rgb(255, 255, 255, 0.9);
+    padding: .9rem 2vw;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+nav ul li.active a {
+    background-color: darken($menuColor, $amount: 10%);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: darken($menuColor, $amount: 5%);
+    color: #EE8252;
+}
+/*----------- MAIN --------------*/
+main {
+
+    h1{
+        color: #483F52;
+    }
+     
+    .swiper-wrapper {
+        margin-bottom: 25px;
+    }// places the dots below the image
+
+    .swiper {
+        width: 100%;
+        height: auto;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    } //end swiper
+
+  p{
+    margin: 0;
+    padding: .4rem 2vw;
+    position: absolute;
+    transform: translateY(-100%);
+    background-color:  rgba(0,0,0, 0.5);
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+ 
+
+ div:nth-child(1){
+    background-image: url(../images/boston02.jpg);
+    background-position:center;
+    background-position-y: top;
+    background-size:cover;
+    
+  }
+ div:nth-child(2){
+    background-image: url(../images/boston04.jpg);
+    background-position:center;
+  }
+
+ div:nth-child(3){
+    background-image: url(../images/boston01.jpg);
+    background-position:center;
+  }
+
+ div:nth-child(4){
+    background-image: url(../images/boston05.jpg);
+    background-position:center;
+  }
+
+  div a{
+    display: block;
+    width: 100%;
+    height: 300px;
+    text-decoration: none;
+    padding: 0 2%;
+    transition: all .5s ease-in;
+  }
+
+div:nth-child(1) a {
+    background-color: #EE8252;
+  }
+
+div:nth-child(2) a {
+    background-color: #483F52;
+  }
+
+div:nth-child(3) a {
+    background-color: #F8B34C;
+  }
+
+div:nth-child(4) a {
+    background-color: #8894C0;
+  }
+  
+  div a:hover {
+    background: none;
+    text-shadow: 0 0 4px black;
+  }
+
+h3{
+    color: white;
+}
+
+i{
+    color: white;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.card {
+    flex-basis: 100%;
+}
+
+  }
+
+
+
+
+
+ }/*-- end of main --*/
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $primaryColor;
+    padding: .5rem 2%;
+    text-align: center;
+    color: white;
+}
