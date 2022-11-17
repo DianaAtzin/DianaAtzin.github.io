@@ -1,0 +1,48 @@
+header, nav,footer, main{
+    max-width: 75rem;
+    margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+#hamburgerBtn{display: none;}
+
+nav{
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    div{display: none;}
+
+    ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.2);;
+    }
+}
+
+nav ul{
+    display: flex;
+    margin-left: 2%;
+    justify-content: left;
+    padding-right: 8vw;
+    border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+
+/*----------- MAIN --------------*/
+
+form label.sbs{
+    padding: .4rem 0;
+
+}
+
+/*----------- FOOTER --------------*/
+    

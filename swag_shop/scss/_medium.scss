@@ -1,0 +1,46 @@
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+#headerWrapper {
+    border-bottom: 1px solid #eee;
+    background-color: $primaryColor;
+}
+
+header{
+
+    grid-template-columns: 51px auto auto;
+
+    div#phone {
+        display: block;
+        justify-self: end;
+        a{
+            color: $menuColor;
+            text-decoration: none;
+            font-weight: $normalWeight;
+            font-size: 1.5rem;
+        }// end anchor 
+
+        a:hover {color:$accentColor}
+
+
+    } // end phone 
+
+
+} //end header 
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+
+/*----------- FOOTER --------------*/
+    

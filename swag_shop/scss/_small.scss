@@ -1,0 +1,198 @@
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    min-width: 320px;
+}
+#pageWrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+.moveOver>.content{transform: translateX(-180px);}
+.content {transition: transform 500ms ease;}
+
+
+/*----------- HEADER --------------*/
+
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 48px;
+    align-items: center;
+    padding: .5rem 2vw;
+    background-color: $primaryColor;
+   
+}
+header h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    padding-left: 4rem;
+    color: black;
+}
+
+button{
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    align-self: start;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    text-align: right;
+    color: $accentColor;
+} // end button
+
+/*----------- NAVIGATION --------------*/
+
+
+nav {
+
+    background: #eee;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+       
+    div{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        background-color: $accentColor;
+        color: #eee;
+    }
+    
+}
+nav ul {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li a {
+    display: block;
+    padding: .9rem 2vw;
+    text-decoration: none;
+    text-align: right;
+    color: black;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    background-color: $secondaryColor;
+    color: white;
+}
+nav ul li.active a {
+    background-color: $accentColor;
+    color: $primaryColor;
+}
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+
+
+/*----------- FORM --------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+    div{
+        padding-bottom: 0;
+    }
+}
+
+form legend {
+    color: #555;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, div {
+    display: block;
+    padding-top: 1rem;
+    color: $accentColor;
+    font-size: .8rem;
+    padding-bottom: 1rem;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-weight: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .5rem 0;
+    color: #555;
+
+    input{
+        margin-right: .5rem;
+    }
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: $accentColor;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+} // end of main
+
+/*----------- FOOTER --------------*/
+
+footer {
+    background-color: $primaryColor;
+    padding: 1rem 2%;
+    text-align: center;
+    color: black;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
