@@ -1,0 +1,69 @@
+
+div#pageWrapper {
+    
+    grid-template-areas: 
+     "header header"
+     "navigation content"
+     "footer footer";
+
+     grid-template-columns: 150px auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+a.myjump{display: none;}
+nav {height: auto;}
+
+
+
+/*----------- MAIN --------------*/
+
+main{
+    
+
+    div.product{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 70px 1fr;
+
+       aside{grid-area: title}
+       span{grid-area: product}
+       section{grid-area: overview}
+
+       grid-template-areas: 
+       "title title"
+       "product overview";
+
+
+       span{margin-right: 1rem;}
+    }
+    
+    div.productA{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 1fr;
+   
+          aside{grid-area: title}
+          span{grid-area: product}
+          section{grid-area: overview}
+   
+          grid-template-areas: 
+          "title title"
+          "overview product";
+   
+   
+          span{margin-right: 1rem;}
+       }
+    
+}
+
+/*----------- FOOTER --------------*/
+    
