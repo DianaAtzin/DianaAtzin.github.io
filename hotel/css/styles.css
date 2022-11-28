@@ -322,87 +322,60 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Manrope, Verdana;
+  font-family: "Roboto", sans-serif;
 }
 
 /*----------- HEADER --------------*/
 header {
-  display: grid;
-  grid-template-columns: 51px auto;
-  align-items: center;
   padding: 0.5rem 2%;
-  background-color: #592A37;
+  background-color: #224A59;
 }
 header h1 {
-  font-size: 1.6rem;
-  padding-left: 2rem;
+  margin: 0;
+  font-weight: 300;
   color: white;
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #8C5866;
-}
-nav button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.5rem;
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  color: white;
-  padding: 0.5rem 2vw 0.5rem 1rem;
-  display: flex;
-}
-nav button span:nth-child(1) {
-  display: block;
-}
-nav button span:nth-child(2) {
-  display: none;
-}
-nav button.open span:nth-child(1) {
-  display: none;
-}
-nav button.open span:nth-child(2) {
-  display: block;
-}
-
-nav ul {
-  background-color: #8C5866;
-  position: absolute;
-  right: 0;
+  position: fixed;
+  bottom: 0;
+  left: center;
   width: 100%;
-  border-top: solid 1px #302525;
+  z-index: 999;
+  background-color: #F25430;
+}
+nav ul {
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: none;
 }
-
-nav ul.open {
-  display: block;
-}
-
 nav ul li {
-  border-bottom: solid 1px #302525;
+  flex-basis: 33.3%;
 }
-
 nav ul li a {
-  display: block;
-  color: #302525;
-  padding: 0.9rem 2vw;
+  width: 100%;
+  text-transform: uppercase;
+  color: #eee;
+  padding: 2rem 0;
   text-decoration: none;
-  text-align: right;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: column;
 }
-
+nav ul li a ion-icon {
+  font-size: 2rem;
+}
 nav ul li a:hover {
-  background-color: #5d3a44;
-  color: #F2E4E8;
+  background-color: #eee;
+  color: #038C7F;
 }
-
 nav ul li.active a {
-  background-color: #6d444f;
+  background-color: #224A59;
   color: #fff;
 }
 
@@ -410,101 +383,59 @@ nav ul li.active a {
 main {
   padding: 0;
   min-height: 10rem;
+  /*-- end inventory rapper --*/
 }
-
-p {
-  line-height: 1.2rem;
-  margin-left: 0;
-}
-
-h1 {
-  margin-left: 2.5%;
-  font-size: x-large;
-  color: #592A37;
-}
-
-h2 {
-  font-size: larger;
-  color: #592A37;
-}
-
-main figure {
-  width: 50%;
-  margin: 0;
-}
-
-div.articles {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  margin-left: 2%;
-}
-
-div.member {
-  flex-basis: 100%;
+main h1 {
   margin: 0.5rem;
-  text-align: left;
+  color: #224A59;
 }
-div.member figure img {
-  width: 100%;
+main div#inventoryWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 8rem;
+  /*-- end div --*/
 }
-
-figure.myheptagon img {
-  float: left;
-  shape-outside: circle(100% at 100% 0%);
-  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-  margin: 0.5rem;
-}
-
-figure.mybevel img {
-  float: left;
-  shape-outside: circle(100% at 100% 0%);
-  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-          clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  margin: 0.5rem;
-}
-
-figure.myparalelogram img {
-  float: left;
-  shape-outside: circle(100% at 100% 0%);
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  margin: 0.5rem;
-}
-
-figure.myrhombus img {
-  float: left;
-  shape-outside: circle(100% at 100% 0%);
-  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-  margin: 0.5rem;
-}
-
-section.thegallery figure {
-  width: 100%;
-  height: 0;
-  padding-bottom: 52%; /* you define this doing image height / widht * 100% */
+main div#inventoryWrapper figure {
   position: relative;
   margin: 0;
-}
-
-section.thegallery figure img {
   width: 100%;
-  height: auto;
+}
+main div#inventoryWrapper figure img {
+  width: 100%;
+}
+main div#inventoryWrapper figcaption {
   position: absolute;
-}
-
-/*----------- FOOTER --------------*/
-footer {
-  background-color: #592A37;
-  padding: 0.5rem 2%;
-  margin-top: 2%;
-  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.5);
   color: white;
+  padding: 0.3rem 2%;
+}
+main div#inventoryWrapper div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*-- end span --*/
+}
+main div#inventoryWrapper div span {
+  padding-left: 0.1rem;
+  color: rgb(31, 31, 31);
+}
+main div#inventoryWrapper div span p {
+  font-size: small;
+}
+main div#inventoryWrapper div span ion-icon {
+  font-size: 1.5rem;
+  float: left;
+  padding-right: 0.2rem;
+}
+main div#inventoryWrapper section.card {
+  background-color: #F2F2F2;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
+/*-- end main --*/
+/*----------- FOOTER --------------*/
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
@@ -516,207 +447,18 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    width: 200px;
-  }
   /*----------- MAIN --------------*/
-  main p {
-    margin-left: 2%;
-  }
-  div.member {
-    flex-basis: 45%;
-    margin: 0.5rem;
-    text-align: left;
-  }
-  div.member figure img {
-    width: 100%;
+  main div#inventoryWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 8rem;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, main, footer {
-    max-width: 75rem;
-    margin: auto;
-  }
-  /*----------- BODY --------------*/
-  /*----------- HEADER --------------*/
-  header {
-    grid-template-columns: 51px auto auto;
-  }
-  /*----------- NAVIGATION --------------*/
-  nav {
-    justify-self: end;
-    background-color: transparent;
-  }
-  nav button {
-    display: none;
-  }
-  nav ul, nav ul.open {
-    position: relative;
-    display: flex;
-    border: none;
-    background-color: transparent;
-    width: auto;
-  }
-  nav ul li {
-    border: none;
-  }
-  nav ul li a {
-    color: white;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    margin-left: 0.2rem;
-  }
-  nav ul li a:hover {
-    background-color: #F2E4E8;
-    color: black;
-  }
-  nav ul li.active a {
-    color: #9197A7;
-  }
-  /*----------- MAIN --------------*/
-  main p {
-    margin-left: 0;
-  }
-  div.member {
-    flex-basis: 22%;
-    margin: 0.5rem;
-    text-align: left;
-  }
-  div.member figure img {
-    width: 100%;
-  }
-  /*----------- FOOTER --------------*/
-} /* end of media query */basis: 75%;
-  }
-  .medium-10 {
-    flex-basis: 83.3333333333%;
-  }
-  .medium-11 {
-    flex-basis: 91.6666666667%;
-  }
-  .medium-12 {
-    flex-basis: 100%;
-  }
-  /*----------- FOOTER --------------*/
-} /* end of media query */
-@media only screen and (min-width: 64rem) {
-  header, main {
-    max-width: 75rem;
-    margin: auto;
-  }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    display: flex;
-    justify-content: right;
-    padding-right: 8vw;
-  }
-  div#headerWrapper {
-    grid-row-start: 1;
-  }
-  div#navWrapper {
-    grid-row-start: 2;
-  }
-  div#mainWrapper {
-    grid-row-start: 3;
-  }
-  div#footerWrapper {
-    grid-row-start: 4;
-  }
   /*----------- MAIN --------------*/
-  /*---- COLUMNS ----*/
-  .large-0 {
-    flex-basis: 0%;
-  }
-  .large-1 {
-    flex-basis: 8.3333333333%;
-  }
-  .large-2 {
-    flex-basis: 16.6666666667%;
-  }
-  .large-3 {
-    flex-basis: 25%;
-  }
-  .large-4 {
-    flex-basis: 33.3333333333%;
-  }
-  .large-5 {
-    flex-basis: 41.6666666667%;
-  }
-  .large-6 {
-    flex-basis: 50%;
-  }
-  .large-7 {
-    flex-basis: 58.3333333333%;
-  }
-  .large-8 {
-    flex-basis: 66.6666666667%;
-  }
-  .large-9 {
-    flex-basis: 75%;
-  }
-  .large-10 {
-    flex-basis: 83.3333333333%;
-  }
-  .large-11 {
-    flex-basis: 91.6666666667%;
-  }
-  .large-12 {
-    flex-basis: 100%;
-  }
-  /*----------- FOOTER --------------*/
-} /* end of media query */d-color: #29538b;
-    color: #fff;
-  }
-  /*----------- MAIN --------------*/
-  main .card-deck .card {
-    flex-basis: 50%;
-  }
-  /*----------- FOOTER --------------*/
-} /* end of media query */
-@media only screen and (min-width: 60rem) {
-  nav, header h1, main {
-    max-width: 64rem;
-    margin: auto;
-  }
-  /*----------- BODY --------------*/
-  /*----------- HEADER --------------*/
-  div#headerWrapper {
-    background-image: url(../images/header-large.jpg);
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
-  div#titleWrapper {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  header h1 {
-    font-size: 2.5rem;
-    margin: auto;
-    background: none;
-    padding-left: 0;
-  }
-  /*----------- NAVIGATION --------------*/
-  nav button {
-    display: none;
-  }
-  nav ul, nav ul.open {
-    display: flex;
-    justify-content: left;
-    border: none;
-  }
-  nav ul li {
-    border: none;
-  }
-  nav ul li a {
-    font-size: 0.9rem;
-    padding: 0.5rem 1.2rem;
-  }
-  /*----------- MAIN --------------*/
-  main .card-deck .card {
-    flex-basis: 25%;
-  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
