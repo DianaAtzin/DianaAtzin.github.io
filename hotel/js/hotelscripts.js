@@ -1,6 +1,6 @@
 
 // what is the path to the JSON file?
-const apiURL = "hotel/js/hoteldata.js";
+const apiURL = "hoteldata.js";
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
