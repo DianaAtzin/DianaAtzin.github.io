@@ -1,0 +1,279 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $primaryFont;
+
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding-left: 2%;
+    padding-top: 2%;
+    background-color: $primaryColor;
+}
+
+
+header figure.logo {
+    float: left;
+    margin: 0;
+}
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+
+    background-color: $menuColor;
+    border-top: solid 1px #a8a8b2;
+    
+
+    button{
+        position: relative;
+        height: 44px;
+        width: 44px;
+        background: transparent;
+        border: none;
+        .line {
+            position: absolute;
+            height: 2px;
+            width: 60%;
+            left: 20%;
+            background-color: white;
+            transition: all .3s ease;
+        }
+        .top {top: 29%;}
+        .middle {top: 48%;}
+        .bottom {top: 67%}
+       
+    }
+    
+
+}
+
+#hamburgerBtn.open {
+    .top{
+        transform: rotate(45deg);
+        top: 48%
+    }
+    .middle, .bottom {
+        transform: rotate(-45deg);
+        top: 48%
+    }
+}
+
+nav ul {
+    
+    border-top: solid 1px #a8a8b2;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li {
+    border-bottom: solid 1px #a8a8b2;
+    margin: 0;
+    padding: 0;
+   
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 2vw;
+    text-decoration: none;
+    text-align: left;
+
+}
+
+nav ul li a:hover {
+    background-color: darken($menuColor, $amount: 15%);
+    color: white;
+}
+nav ul li.active a {
+    background-color: darken($menuColor, $amount: 10%);
+    color: #c4c4c4;
+}
+
+
+
+
+/*----------- MAIN --------------*/
+main {
+
+    h1 {
+        color: $menuColor;
+        margin-right: 2%;
+        margin-left: 2%;
+        border-bottom: solid 1px #a8a8b2;
+        font-weight: 500;
+    }
+
+    figure.bannerHero {
+        margin: 2%;
+        padding: 0;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+
+
+    div.section1 {
+        margin: 2%;
+        background-color: black;
+        color: white;
+        h2, h3 {
+            color: $accentColor;
+        }
+
+        h2{
+           font-weight: 600;
+        }
+
+        h3{
+            font-weight: bolder;
+            font-size: xx-large;
+            margin-top: 0;
+            font-style: italic;
+        }
+        
+        div.right {
+            text-align: right;
+            
+            ul li {list-style-type:none}
+
+            
+        }
+    }
+
+    div.section2 {
+        margin: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: solid 1px #a8a8b2;
+
+        div.aboutUs {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            
+
+            p{ 
+                margin-right: .7rem;
+                margin-top: 0;
+                color: gray;
+            }
+            span{
+                color: $menuColor;
+                font-size:x-large;
+                font-weight: 400;
+                margin-top: .7rem;
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+    div.section3 {
+        margin: 2%;
+
+        p{ 
+            margin-right: .2rem;
+            margin-top: 0;
+            color: gray;
+        }
+        span{
+            color: $menuColor;
+            font-size:x-large;
+            font-weight: 400;
+            margin-top: .7rem;
+            margin-bottom: 0;
+        }
+
+        div.article{
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        div.lead {
+            
+            a {
+                display: block;
+                background-color: $menuColor;
+                text-align: center;
+                font-size: x-large;
+                color: white;
+                padding: 0.5rem 0;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                margin-top: 0;
+                border-radius: 15px;
+                text-decoration: none;
+            }
+            .title{
+                margin-top: .8rem;
+                text-align: center;
+            }
+
+            img{
+                margin-left: 3rem;
+            }
+        }
+
+    }
+
+    div.section4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        img {
+            width: 35%;
+            margin: 1rem;
+        }
+        margin: 1rem;
+    }
+
+
+
+ } // end parent of main
+
+ section#blackWrapper {
+    background-color: black;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background: linear-gradient(0deg, rgba(1,83,115,1) 11%, rgba(4,128,176,1) 100%);
+    padding: 1.5rem 2%;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+}
+div#footerWrapper {
+     background: linear-gradient(0deg, rgba(1,83,115,1) 11%, rgba(4,128,176,1) 100%);
+  }
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

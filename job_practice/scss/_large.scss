@@ -1,0 +1,55 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    button {
+        display: none;
+    }
+    ul, ul.open { 
+        display: flex;
+        justify-content: right;
+        border: none;
+    }
+
+    ul li {
+        border: none;
+    }
+} // end nav
+/*----------- MAIN --------------*/
+main{
+    
+
+    div.aboutUs {
+        flex-basis: 25%;
+        p{ margin-right: .7rem;}
+
+    }
+
+    div.section2 {
+
+        div.aboutUs {
+            flex-basis: 24%;
+            margin: .3rem;
+            p{ margin-right: .7rem;}
+
+        }
+   }
+
+
+
+ } // end parent main
+
+
+/*----------- FOOTER --------------*/
+

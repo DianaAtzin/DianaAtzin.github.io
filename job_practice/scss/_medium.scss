@@ -1,0 +1,114 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+
+    background-color: white;
+    button {
+        display: none;
+    }
+    ul, ul.open { 
+        display: flex;
+        justify-content: right;
+        border: none;
+    }
+
+    ul li {
+        border: none;
+    }
+
+    ul li a {
+        color: gray;
+    }
+} // end nav
+    
+/*----------- MAIN --------------*/
+
+main{
+
+
+    h1{ margin-left: 2%;}
+
+
+
+    div.section1 {
+        margin: 2%;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        div.right {
+            text-align: right;
+
+        }
+        
+    }
+
+    div.section2 {
+
+        div.aboutUs {
+            flex-basis: 47%;
+            margin: .5rem;
+            p{ margin-right: .7rem;}
+
+        }
+   }
+
+   div.section3{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 80%;
+     
+
+     img{
+        width: 90%;
+     }
+
+     p{
+        margin-right: 1.3rem;
+     }
+     
+
+
+        div.lead{
+            grid-column: 3/span 1;
+            grid-row: 1/span 2;
+
+            img{
+                margin: 0;
+            }
+        }
+
+        div.support {
+            grid-column: 1/span 2;
+        }
+   }
+
+   div.section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 2%;
+    align-items:center;
+
+    img {
+        width: 80%;
+        margin: 1rem;
+    }
+   }
+
+}
+
+
+/*----------- FOOTER --------------*/
+    
