@@ -113,6 +113,14 @@ main {
         font-weight: 300;
         padding-left: .5rem;
     }
+
+    h2{
+        font-weight: 300;
+    }
+
+    h3{
+        font-weight: 400;
+    }
      
     .swiper-wrapper {
         margin-bottom: 25px;
@@ -163,7 +171,7 @@ div.flexed {
 
     a{
     display: block;
-    background-color: lightgray;
+    background-color: #778C7C;
     color: white;
     padding: 0.5rem 0;
     text-align: center;
@@ -188,7 +196,155 @@ div.flexed {
         text-align: center;
         margin-top: .8rem;
     }
-}
+    }
+
+
+      /*---- COLUMNS ----*/
+
+
+      form {
+        margin-bottom: 2rem;
+      }
+
+
+      form fieldset {
+        margin: 2rem 0;
+        border-radius: 10px;
+        padding: .5rem 2%;
+
+        border: 1px solid #778C7C;
+        margin-bottom: 1rem;
+
+        label.client {
+            font-size: .9rem;;
+        }
+    }
+
+    form.myForm fieldset {
+        border: 1px solid #778C7C;
+        border-radius: 3px;
+        margin-bottom: 1rem;
+    }
+
+    form.myForm legend {
+        color: #778C7C;
+        font-size: 1rem;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    form.myForm label {
+        margin: .5rem;
+        
+    }
+    .myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+        display: block;
+    }
+
+    .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+        border: solid 1px #888;
+        padding: .5rem;
+        width: 250px;
+        border-radius: .3rem;
+        font-weight: 300;
+        width: 100%;
+        max-width: 20rem;
+        
+    }
+
+    form label.top input{
+        display: block;
+        border: solid 1px #999;
+        border-radius: 4px;
+        padding: 0.5rem;
+        width: 100%;
+        max-width: 20rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    form label.comments{
+        color: #778C7C;
+    }
+
+    form.myForm textarea {
+        height: 10rem;
+        
+    }
+    
+    form.myForm :required {
+        
+        border-left: #fe457e solid 6px;
+    }
+
+    form label input:required:valid {
+        border-left: #778C7C solid 6px;
+    }
+    
+    form.myForm [type=submit] {
+        background-color: #778C7C;
+        border: none;
+        padding: .75rem 1.5rem;
+        border-radius: 1rem;
+        color: white;
+        margin: 0 0 2rem 2%;
+        margin-left: .5rem;
+        width: 96%;
+        max-width: 20rem;
+    }
+
+    /*---- Tables ----*/
+
+    table.wedding-pricing {
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            background-color: #778C7C;
+            color: white;
+            padding: .5rem 2vw;
+            text-align: left;
+        }
+
+        td {
+            color: #778C7C;
+            padding: .4rem 2vw;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f7f7f7;
+        }
+
+        tr:hover {
+            background-color: $headercolor;
+        }
+    }
+
+    table.portraits-pricing {
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            background-color: #778C7C;
+            color: white;
+            padding: .5rem 2vw;
+            text-align: left;
+        }
+
+        td {
+            color: #778C7C;
+            padding: .4rem 2vw;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f7f7f7;
+        }
+
+        tr:hover {
+            background-color: $headercolor;
+        }
+    }
+
+
+
 
  }/*-- end of main --*/
 
@@ -206,6 +362,7 @@ div.flexed {
     position: absolute;
   }
 
+  
 
 
 /*----------- FOOTER --------------*/

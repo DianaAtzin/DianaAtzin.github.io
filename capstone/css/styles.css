@@ -357,7 +357,7 @@ header figure {
 
 /*----------- NAVIGATION --------------*/
 div#navWrapper {
-  background-color: #b0b59e;
+  background-color: #778C7C;
 }
 
 nav button {
@@ -390,21 +390,29 @@ nav ul li a {
   text-align: left;
 }
 nav ul li.active a {
-  background-color: #949b7b;
+  background-color: #5b6b5f;
 }
 nav ul li a:hover {
-  background-color: #a4aa90;
+  background-color: #6b7f70;
   color: #ede5cf;
 }
 
 /*----------- MAIN --------------*/
 main {
   /*---- COLUMNS ----*/
+  /*---- COLUMNS ----*/
+  /*---- Tables ----*/
 }
 main h1 {
   color: black;
   font-weight: 300;
   padding-left: 0.5rem;
+}
+main h2 {
+  font-weight: 300;
+}
+main h3 {
+  font-weight: 400;
 }
 main .swiper-wrapper {
   margin-bottom: 25px;
@@ -480,7 +488,7 @@ main .TipFAQ {
 }
 main .TipFAQ a {
   display: block;
-  background-color: lightgray;
+  background-color: #778C7C;
   color: white;
   padding: 0.5rem 0;
   text-align: center;
@@ -502,6 +510,117 @@ main .TipFAQ span {
   text-align: center;
   margin-top: 0.8rem;
 }
+main form {
+  margin-bottom: 2rem;
+}
+main form fieldset {
+  margin: 2rem 0;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  border: 1px solid #778C7C;
+  margin-bottom: 1rem;
+}
+main form fieldset label.client {
+  font-size: 0.9rem;
+}
+main form.myForm fieldset {
+  border: 1px solid #778C7C;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+main form.myForm legend {
+  color: #778C7C;
+  font-size: 1rem;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+main form.myForm label {
+  margin: 0.5rem;
+}
+main .myForm label, main .myForm select, main .myForm [type=text], main .myForm [type=tel], main .myForm [type=email], main .myForm textarea {
+  display: block;
+}
+main .myForm [type=text], main .myForm [type=tel], main .myForm [type=email], main .myForm select, main .myForm textarea {
+  border: solid 1px #888;
+  padding: 0.5rem;
+  width: 250px;
+  border-radius: 0.3rem;
+  font-weight: 300;
+  width: 100%;
+  max-width: 20rem;
+}
+main form label.top input {
+  display: block;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main form label.comments {
+  color: #778C7C;
+}
+main form.myForm textarea {
+  height: 10rem;
+}
+main form.myForm :required {
+  border-left: #fe457e solid 6px;
+}
+main form label input:required:valid {
+  border-left: #778C7C solid 6px;
+}
+main form.myForm [type=submit] {
+  background-color: #778C7C;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  color: white;
+  margin: 0 0 2rem 2%;
+  margin-left: 0.5rem;
+  width: 96%;
+  max-width: 20rem;
+}
+main table.wedding-pricing {
+  width: 100%;
+  border-collapse: collapse;
+}
+main table.wedding-pricing th {
+  background-color: #778C7C;
+  color: white;
+  padding: 0.5rem 2vw;
+  text-align: left;
+}
+main table.wedding-pricing td {
+  color: #778C7C;
+  padding: 0.4rem 2vw;
+}
+main table.wedding-pricing tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+main table.wedding-pricing tr:hover {
+  background-color: #F2F0EB;
+}
+main table.portraits-pricing {
+  width: 100%;
+  border-collapse: collapse;
+}
+main table.portraits-pricing th {
+  background-color: #778C7C;
+  color: white;
+  padding: 0.5rem 2vw;
+  text-align: left;
+}
+main table.portraits-pricing td {
+  color: #778C7C;
+  padding: 0.4rem 2vw;
+}
+main table.portraits-pricing tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+main table.portraits-pricing tr:hover {
+  background-color: #F2F0EB;
+}
 
 /*-- end of main --*/
 section.thegallery figure {
@@ -520,7 +639,7 @@ section.thegallery figure img {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #b0b59e;
+  background-color: #778C7C;
   padding: 0.5rem 2%;
   text-align: center;
   color: white;
@@ -529,7 +648,7 @@ footer {
 /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
 @media only screen and (max-width: 34.9375rem) {
   nav {
-    background-color: #b0b59e;
+    background-color: #778C7C;
   }
   /* Navigation Button  -------------------------------------------------------- */
   nav button {
@@ -609,7 +728,7 @@ footer {
   }
   /*----------- NAVIGATION --------------*/
   nav {
-    background-color: #b0b59e;
+    background-color: #778C7C;
   }
   nav button {
     display: none;
@@ -640,7 +759,7 @@ footer {
   nav ul li ul {
     display: flex;
     flex-direction: column;
-    background-color: #a4aa90;
+    background-color: #6b7f70;
     border: none;
     width: 14rem;
     position: absolute;
@@ -656,7 +775,7 @@ footer {
     margin-left: 0;
   }
   nav ul li.active a {
-    background-color: #989f81;
+    background-color: #5f7163;
     color: #fff;
   }
   /*----------- MAIN --------------*/
@@ -712,7 +831,6 @@ footer {
   }
   main .TipFAQ a {
     display: block;
-    color: black;
     padding: 0.6rem 0;
   }
   /*----------- FOOTER --------------*/
@@ -793,7 +911,6 @@ footer {
   }
   main .TipFAQ a {
     display: block;
-    color: black;
     padding: 0.6rem 0;
   }
   /*----------- FOOTER --------------*/

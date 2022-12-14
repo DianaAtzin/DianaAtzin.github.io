@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="photography page">
+<meta name="author" content="Diana Putnam">
+
+<!-- This start file was build by Diana Putnam  -->
+<title>Diana Putnam Photography</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME OLD LINK -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<!-- FONT AWESOME NEW KIT LINK -->
+<script src="https://kit.fontawesome.com/7eb37c2240.js" crossorigin="anonymous"></script>
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+
+<div id="headerWrapper">
+<header class="clearfix">
+    <figure class="logo"> 
+        <img src="images/dplogo_2.png" alt="logo"
+        srcset="images/dplogo_1.png 1x, 
+        images/dplogo_2.png 2x, 
+        images/dplogo_3.png 3x"
+        >
+    </figure>
+    <div>
+    <h1>Diana Putnam</h1>
+    <h2>Photography</h2>
+    
+    </div>
+</header>
+
+</div>
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Welcome</a></li>   
+            <li class="parent"><a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="weddings.html">Weddings</a></li> 
+                    <li><a href="families.html">Families</a></li> 
+                    <li><a href="portraits.html">Portraits</a></li> 
+                </ul>
+            </li>
+            <li><a href="investment.html">Investment</a></li> 
+            <li><a href="letschat.html">Let's Chat!</a></li> 
+        </ul>
+    </nav>
+</div>
+    
+<!-- CONTENT HERE -->
+    <main>
+
+        <h1>Let's Chat!</h1>
+        
+        <p>Whether it's to inquire about photography, or just to say hello... I would love to hear from you!
+            Simply fill out the form bellow or send me a message and we can start chatting!</p>
+
+
+            <!-- Form content-->
+            
+            
+           <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset> 
+                <legend> Client Information</legend>
+            <label class="client">First Name* <input type="text" name="fname" required></label>
+            <label class="client">Last Name* <input type="text" name="lname" required></label>
+            <label class="client">Email* <input type="email" name="email"  placeholder="someone@gmail.com" required></label>
+            <label class="client">Cell Number* <input type="tel" name="phone" required placeholder="000-000-0000"></label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>What type of photo session are you looking for?</legend>
+                <label><input type="radio" name="session" value="wedding"> 
+                    Wedding </label>
+                <label><input type="radio" name="session" value="engagments"> 
+                    Engagement / Couples </label>
+                <label><input type="radio" name="session" value="portrait"> 
+                    Lifestyle / Portrait </label>
+                <label><input type="radio" name="session" value="family"> 
+                    Family </label>
+
+                <label class="top">Date needed<input type="date" name="completeDate"></label>
+
+             </fieldset>
+    
+             <fieldset>
+                <legend>Preferred Locations</legend>
+                <label><input type="checkbox" name="studio" value="chosen"> 
+                    Natual Light Studio </label>
+                <label><input type="checkbox" name="mountains" value="chosen"> 
+                    Mountains </label>
+                <label><input type="checkbox" name="urban" value="chosen"> 
+                    City/Urban </label>
+                <label><input type="checkbox" name="fields" value="chosen"> 
+                    Fields open space </label>
+                <label><input type="checkbox" name="fields" value="chosen"> 
+                    Parks </label>
+             </fieldset>
+
+             <fieldset>
+                 <legend>How did you hear about me?</legend>
+                <Label> 
+                    <select name="time">
+                    <option value="none"> Select Option</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="google">Google Search</option>
+                    <option value="friend">From a Friend</option>
+                    </select>
+                 </Label>
+             </fieldset>
+    
+             <label class="comments">Comments 
+                 <textarea name="comments"></textarea>
+             </label>
+                
+                 <input type="submit" value="Send Photo Session Inquiry">
+                 
+             </form>   <!-- end of form  --> 
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2022 &bull; Diana Putnam &bull; Login
+    </footer>
+
+    <script src="js/scripts.js"> </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+<script>
+    var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+  threshold: 0
+});
+</script>
+
+</body>
+</html>
