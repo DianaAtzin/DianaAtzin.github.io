@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="photography page">
+<meta name="author" content="Diana Putnam">
+
+<!-- This start file was build by Diana Putnam  -->
+<title>Diana Putnam Photography</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME OLD LINK -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<!-- FONT AWESOME NEW KIT LINK -->
+<script src="https://kit.fontawesome.com/7eb37c2240.js" crossorigin="anonymous"></script>
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+
+<div id="headerWrapper">
+<header class="clearfix">
+    <figure class="logo"> 
+        <img src="images/dplogo_2.png" alt="logo"
+        srcset="images/dplogo_1.png 1x, 
+        images/dplogo_2.png 2x, 
+        images/dplogo_3.png 3x"
+        >
+    </figure>
+    <div>
+    <h1>Diana Putnam</h1>
+    <h2>Photography</h2>
+    
+    </div>
+</header>
+
+</div>
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Welcome</a></li>   
+            <li class="parent"><a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="weddings.html">Weddings</a></li> 
+                    <li><a href="#">Families</a></li> 
+                    <li><a href="#">Portraits</a></li> 
+                </ul>
+            </li>
+            <li><a href="#">Investment</a></li> 
+            <li><a href="#">Let's Chat!</a></li> 
+        </ul>
+    </nav>
+</div>
+    
+<!-- CONTENT HERE -->
+    <main>
+
+        <h1> Weddings </h1>
+
+        <section class="thegallery">
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding01.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding02.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding03.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding04.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding05.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding06.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding07.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding08.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding09.jpg" />
+            </figure>
+            <figure>
+                <img alt="wedding" class="lazy" data-src="images/wedding10.jpg" />
+            </figure>
+          
+    
+           </section> <!-- end of gallery-->
+
+
+
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2022 &bull; Diana Putnam &bull; Login
+    </footer>
+
+    <script src="js/scripts.js"> </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+<script>
+    var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+  threshold: 0
+});
+</script>
+
+</body>
+</html>

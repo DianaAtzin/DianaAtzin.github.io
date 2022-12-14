@@ -1,0 +1,71 @@
+
+nav, header, main {max-width: 64rem; margin: auto;}
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+  
+
+   
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+    button {
+        display: none;
+    }
+    ul, ul.open { 
+        display: flex;
+        justify-content: left;
+        border: none;
+    }
+
+    ul li {
+        border: none;
+    }
+    ul li a{
+        font-size: .9rem;
+        padding: .5rem 1.2rem;
+    }
+} // end nav
+
+/*----------- MAIN --------------*/
+
+main{
+    .card-deck {
+        .card {
+            flex-basis: 25%;
+    }
+    }
+
+    @for $i from 0 through 12{
+        $w:($i/12) * 100%;
+        .large-#{$i} {flex-basis: $w;}
+    } //end of loop
+
+    div.flexed{
+        margin-bottom: 2rem;
+    }
+
+    .TipFAQ {
+        background-color: $headercolor;
+        margin-right: 0.8rem;
+        padding: .5rem;
+        
+        a{
+            display: block;
+            color: black;
+            padding: .6rem 0;
+        }
+    }
+
+
+}
+
+/*----------- FOOTER --------------*/
+    
